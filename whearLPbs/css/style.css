@@ -11,3 +11,21 @@
   color:black;
 }
 
+.btn-lower{
+  color: white;
+  border:1px solid;
+}
+
+.btn-lower:hover{
+  color:#fff;
+  background-color:#fdcc52;
+  border-color:#fdcc52
+}
+
+
+@media (max-width:475px){
+  .logo{
+    height:"20px";
+    width:"24px";
+  }
+}
