@@ -26,10 +26,12 @@
   background-color:#cccccc;
   padding: 15px 45px;
   font-size: 11px;
+  color:black;
 }
 
 .submit:hover{
   background-color:#666666;
+  color:white;
 }
 
 .submit:focus { outline-style: none; }
