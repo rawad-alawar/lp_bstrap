@@ -23,7 +23,13 @@
 }
 
 .submit{
-  background-color:black
+  background-color:#cccccc;
+  padding: 15px 45px;
+  font-size: 11px;
+}
+
+.submit:hover{
+  background-color:#666666;
 }
 
 .submit:focus { outline-style: none; }
