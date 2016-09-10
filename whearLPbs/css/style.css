@@ -18,8 +18,14 @@
 
 .btn-lower:hover{
   color:#fff;
-  background-color:#fdcc52;
-  border-color:#fdcc52
+  background-color:#666666;
+  border-color:#666666;
 }
+
+.submit{
+  background-color:black
+}
+
+.submit:focus { outline-style: none; }
 
 

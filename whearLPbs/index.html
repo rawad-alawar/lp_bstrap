@@ -116,6 +116,7 @@
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                       </div>
+                      <input id="send" class="btn submit" type="submit" value="Submit">
                     </form>
                 </div>
             </div>
@@ -285,8 +286,15 @@
                     return false;
                   }
                 });
-
-
+            });
+            
+            $(document).ready(function(){
+                $("input[type='submit']").click(function() {
+                    postToGoogle();
+                    alert("Thanks for signing up!");
+                    clear();
+                    return false;
+                });
             });
 
 
