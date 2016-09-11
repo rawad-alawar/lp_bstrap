@@ -106,19 +106,23 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <h2 class="section-heading signuptext">Sign up for an invite!</h2>
-                    <!--<p>(Don't worry...we don't spam)</p>-->
-                    <!--<div class="badges">-->
-                    <!--    <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>-->
-                    <!--    <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>-->
-                    <!--</div>-->
-                    <form id="form">
-                      <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                      </div>
-                      <input id="send" class="btn submit" type="submit" value="Submit">
-                    </form>
+                    <div id="formrow">
+                      <form id="form">
+                        <div class="form-group">
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <input id="send" class="btn submit" type="submit" value="Submit">
+                      </form>
+                    </div>
                 </div>
+                
+                <div id="thanksrow" class="row hidden">
+                  <div class="col-md-8 col-md-offset-2">
+                      <h2 id="thanks" class="signuptext">Thanks for signing up!</h2>
+                  </div>
+                </div>
+                
             </div>
         </div>
     </section>
@@ -272,16 +276,23 @@
 
 
             }
+            
+            
 
             function clear(){
               $('#exampleInputEmail1').val('');
+            }
+            
+            function success() {
+              $("#formrow").hide();
+              $("#thanksrow").removeClass("hidden").show();
             }
 
             $(document).ready(function(){
                 $("input[type='email']").keyup(function(event) {
                   if(event.keyCode==13){
                     postToGoogle();
-                    alert("Thanks for signing up!");
+                    success();
                     clear();
                     return false;
                   }
@@ -291,7 +302,7 @@
             $(document).ready(function(){
                 $("input[type='submit']").click(function() {
                     postToGoogle();
-                    alert("Thanks for signing up!");
+                    success();
                     clear();
                     return false;
                 });
