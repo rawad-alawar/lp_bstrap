@@ -6,15 +6,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Whear-See it Find it Whear it">
+    <meta name="author" content="Whear">
 
     <title>Whear-See it Find it Whear it</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    
+
     <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
@@ -88,7 +88,7 @@
                             <div class="device">
                                 <div class="screen">
                                     <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/phonescreen2.png" class="img-responsive" alt="">
+                                    <img src="img/ios_feed_phone.png" class="img-responsive" alt="">
                                 </div>
                                 <div class="button">
                                     <!-- You can hook the "home button" to some JavaScript events or just remove it -->
@@ -116,13 +116,13 @@
                       </form>
                     </div>
                 </div>
-                
+
                 <div id="thanksrow" class="row hidden">
                   <div class="col-md-8 col-md-offset-2">
                       <h2 id="thanks" class="signuptext">Thanks for signing up!</h2>
                   </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -221,7 +221,7 @@
             </ul>
         </div>
     </section>
-    
+
     <footer>
         <div class="container">
             <p>&copy; 2016 Whear. All Rights Reserved.</p>
@@ -250,14 +250,14 @@
 
     <!-- Theme JavaScript -->
     <script src="js/new-age.min.js"></script>
-    
+
     <!--Storing Beta Testers-->
     <script type="text/javascript">
             function postToGoogle() {
-                
+
                 var field1 = $("input[type='email']").val();
-                
-                
+
+
 
                 $.ajax({
                     url: "https://docs.google.com/forms/u/0/d/11TDFzQJLlhxsfv9tN29NSCMwxsdzb1ZVIw4Uep-S_Zk/formResponse",
@@ -276,13 +276,13 @@
 
 
             }
-            
-            
+
+
 
             function clear(){
               $('#exampleInputEmail1').val('');
             }
-            
+
             function success() {
               $("#formrow").hide();
               $("#thanksrow").removeClass("hidden").show();
@@ -298,7 +298,7 @@
                   }
                 });
             });
-            
+
             $(document).ready(function(){
                 $("input[type='submit']").click(function() {
                     postToGoogle();
