@@ -291,7 +291,7 @@
               $("#formrow").hide();
               $("#thanksrow").removeClass("hidden").show();
             }
-            
+            //begin if statement
             $(document).ready(function(){
                 $("input[type='email']").keyup(function(event) {
                   if(event.keyCode==13){
@@ -302,7 +302,7 @@
                   }
                 });
             });
-
+        
             $(document).ready(function(){
                 $("input[type='submit']").click(function() {
                     postToGoogle();
