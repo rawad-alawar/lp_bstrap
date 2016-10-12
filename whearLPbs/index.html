@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Whear-See it Find it Whear it">
+    <meta name="description" content=" Whear is a connected community for fashion and style enthusiasts - we provide a platform that helps people connect virtually, share ideas of inspiration and shop directly, from the street, the runway and online.">
     <meta name="author" content="Whear">
 
     <title>Whear-See it Find it Whear it</title>
@@ -278,7 +278,11 @@
             }
 
 
-
+            function isEmail(email) {
+              var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+              return regex.test(email);
+            }
+            
             function clear(){
               $('#exampleInputEmail1').val('');
             }
@@ -287,7 +291,7 @@
               $("#formrow").hide();
               $("#thanksrow").removeClass("hidden").show();
             }
-
+            
             $(document).ready(function(){
                 $("input[type='email']").keyup(function(event) {
                   if(event.keyCode==13){
