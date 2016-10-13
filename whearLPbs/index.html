@@ -291,10 +291,12 @@
               $("#formrow").hide();
               $("#thanksrow").removeClass("hidden").show();
             }
-            //begin if statement
+            
             $(document).ready(function(){
+              
                 $("input[type='email']").keyup(function(event) {
-                  if(event.keyCode==13){
+                  var value = $("input[type='email']").val();
+                  if(event.keyCode==13 && isEmail(value)){
                     postToGoogle();
                     success();
                     clear();
@@ -305,10 +307,13 @@
         
             $(document).ready(function(){
                 $("input[type='submit']").click(function() {
+                  var value = $("input[type='email']").val();
+                  if(isEmail(value)){
                     postToGoogle();
                     success();
                     clear();
                     return false;
+                  }
                 });
             });
 
